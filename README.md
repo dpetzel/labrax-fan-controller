@@ -11,9 +11,13 @@ work in any number of situations
 
 ## Components
 * ESP 32
+  * Source: [Amazon](https://www.amazon.com/dp/B0CR5Y2JVD?th=1)
 * 12v Buck Converter
+  * Source: [Amazon](https://www.amazon.com/dp/B0DBVYP91F?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
 * DHT22
+  * Source: [Amazon](https://www.amazon.com/dp/B0FK5K45KF)
 * 120mm Fan
+ * Source: [Amazon](https://www.amazon.com/dp/B0DJDC74BP)
 
 ## Power Budget
 Assuming an 85% buck efficiency
