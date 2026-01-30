@@ -17,7 +17,7 @@ work in any number of situations
 * DHT22
   * Source: [Amazon](https://www.amazon.com/dp/B0FK5K45KF)
 * 120mm Fan
- * Source: [Amazon](https://www.amazon.com/dp/B0DJDC74BP)
+  * Source: [Amazon](https://www.amazon.com/dp/B0DJDC74BP)
 
 ## Power Budget
 Assuming an 85% buck efficiency
