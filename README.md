@@ -15,12 +15,23 @@ work in any number of situations
 * DHT22
 * 120mm Fan
 
+## Power Budget
+Assuming an 85% buck efficiency
+
+| Component | Voltage | Current (Max) | 12V Input Current (Max) |
+| --------- | ------- | ----------    | ----------------------- |
+| ESP23     | 3.3V    | 0.50 A        | 0.16 A                  |
+| Fan       | 12V     | 0.33 A        | 0.33 A                  |
+| DHT22     | 3.3 V   | 0.0025 A      | 0.0007 A                |
+|           |         |               |                         |
+| **Total** |         |               | **0.49 A**              |
+
 ## Wiring
 ### Diagram
 ```mermaid
 flowchart TD
     subgraph ESP32
-        esp_55[5v]
+        esp_33[3.3V]
         esp_gnd[Gnd]
         esp13[GPIO 13]
         esp14[GPIO 14]
@@ -40,7 +51,7 @@ flowchart TD
     subgraph buck[Buck Converter]
         buckIn+[+ in]
         buckIn-[Gnd in]
-        buckOut+[+ Out]
+        buckOut+[3.3V + Out]
         buckOut-[Gnd out]
     end
 
@@ -65,7 +76,7 @@ flowchart TD
     dht- <--> buckOut-
     
 
-    esp_55 <--> buckOut+
+    esp_33 <--> buckOut+
     esp_gnd <--> buckOut-
 ```
 
