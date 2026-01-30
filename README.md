@@ -1,8 +1,22 @@
+# Lab Rax Cooling Fan Controller
+As Homelab Upgrade 2026 progress, I've gotten to a point
+where I want to install a fan in my Lab Rax mini rack.
 
+This turned out to be a bigger adventure than I expected
+and throughout the process I collected a bunch of information 
+that I will never remember, so I've captured my notes.
 
-# Wiring Diagram
-Physical Wiring Connections are as follows:
+While I'm focused on my Lab Rax build this setup should
+work in any number of situations
 
+## Components
+* ESP 32
+* 12v Buck Converter
+* DHT22
+* 120mm Fan
+
+## Wiring
+### Diagram
 ```mermaid
 flowchart TD
     subgraph ESP32
@@ -53,5 +67,11 @@ flowchart TD
 
     esp_55 <--> buckOut+
     esp_gnd <--> buckOut-
-
 ```
+
+## Printed Case
+
+## Code
+TK
+
+## Notes & Observations
