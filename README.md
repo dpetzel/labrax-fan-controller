@@ -31,7 +31,7 @@ Assuming an 85% buck efficiency
 ```mermaid
 flowchart TD
     subgraph ESP32
-        esp_33[3.3V]
+        esp_33[3.3V +]
         esp_gnd[Gnd]
         esp13[GPIO 13]
         esp14[GPIO 14]
@@ -43,7 +43,7 @@ flowchart TD
     end
 
     subgraph DHT22
-        dht+[+]
+        dht+[3.3V +]
         dht-[Gnd]
         dhtData[Data]
     end
@@ -84,5 +84,8 @@ flowchart TD
 
 ## Code
 TK
+
+## ESP32 Pinout
+![ESP32 Pinout](./images/esp32_devboard_pinout.jpg)
 
 ## Notes & Observations
