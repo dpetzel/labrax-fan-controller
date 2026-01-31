@@ -125,12 +125,19 @@ flowchart TD
 ```
 
 ## Printed Case
+TBD
 
 ## Code
 See [RackFanWithTempSensorv1.ino](./RackFanWithTempSensorv1.ino)
 
 ## ESP32 Pinout
 ![ESP32 Pinout](./images/esp32_devboard_pinout.jpg)
+
+## References
+Here are a few references I leveraged along the way.
+* https://esp32io.com/tutorials/esp32-dht22
+* https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-sensor-arduino-ide/
+* https://dronebotworkshop.com/esp32-pwm-fan/
 
 ## Notes & Observations
 
