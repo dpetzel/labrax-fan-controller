@@ -10,14 +10,53 @@ While I'm focused on my Lab Rax build this setup should
 work in any number of situations
 
 ## Components
-* ESP 32
-  * Source: [Amazon](https://www.amazon.com/dp/B0CR5Y2JVD?th=1)
-* 12v Buck Converter
-  * Source: [Amazon](https://www.amazon.com/dp/B0DBVYP91F?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
-* DHT22
-  * Source: [Amazon](https://www.amazon.com/dp/B0FK5K45KF)
-* 120mm Fan
-  * Source: [Amazon](https://www.amazon.com/dp/B0DJDC74BP)
+
+<table>
+  <thead>
+    <th>Component</th>
+    <th>Source</th>
+    <th>Thumbnail</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ESP32</td>
+      <td>
+        <a href="https://www.amazon.com/dp/B0CR5Y2JVD?th=1">Amazon</a>
+      </td>
+      <td>
+        <img src="./images/esp32.png" width=50>
+      </td>
+    </tr>
+    <tr>
+      <td>12v Buck Converter</td>
+      <td>
+        <a href="https://www.amazon.com/dp/B0DBVYP91F?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1">Amazon</a>
+      </td>
+      <td>
+        <img src="./images/buck_converter.png" width=50>
+      </td>
+    </tr>
+    <tr>
+      <td>DHT22</td>
+      <td>
+        <a href="https://www.amazon.com/dp/B0FK5K45KF">Amazon</a>
+      </td>
+      <td>
+        <img src="./images/dht22.png" width=50>
+      </td>
+    </tr>
+    <tr>
+      <td>120mm Fan</td>
+      <td>
+        <a href="https://www.amazon.com/dp/B0DJDC74BP">Amazon</a>
+      </td>
+      <td>
+        <img src="./images/fan.jpg" width=50>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 ## Power Budget
 Assuming an 85% buck efficiency
@@ -87,9 +126,18 @@ flowchart TD
 ## Printed Case
 
 ## Code
-TK
+See [RackFanWithTempSensorv1.ino](./RackFanWithTempSensorv1.ino)
 
 ## ESP32 Pinout
 ![ESP32 Pinout](./images/esp32_devboard_pinout.jpg)
 
 ## Notes & Observations
+
+Avoid `GPIO12`- This is tied in with the flashing process. Everything will work fine
+through the flashing process and you won't suspect a thing until you physically power
+cycle the device. At that point it just gets into a reboot loop. I ran into this 
+when it was attached to fan PWM. Unclear if similar problems on other functionality.
+
+Tachometer was not reliable. It would only properly record when fan duty was at 100%.
+This was fine as I don't actually need to monitor RPMs and I only discovered this
+while playing around
