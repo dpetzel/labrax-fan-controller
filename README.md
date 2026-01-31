@@ -80,10 +80,11 @@ flowchart TD
         esp14[GPIO 14]
     end
 
-    subgraph 12V Power Suppy
+    subgraph ps[12V Power Suppy]
         12v+[+]
         12v-[Gnd]
     end
+    110v[110v AC] <--> ps
 
     subgraph DHT22
         dht+[3.3V +]
