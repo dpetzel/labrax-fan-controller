@@ -63,7 +63,7 @@ Assuming an 85% buck efficiency
 
 | Component | Voltage | Current (Max) | 12V Input Current (Max) |
 | --------- | ------- | ----------    | ----------------------- |
-| ESP23     | 3.3V    | 0.50 A        | 0.16 A                  |
+| ESP32     | 3.3V    | 0.50 A        | 0.16 A                  |
 | Fan       | 12V     | 0.33 A        | 0.33 A                  |
 | DHT22     | 3.3 V   | 0.0025 A      | 0.0007 A                |
 |           |         |               |                         |
