@@ -1,23 +1,24 @@
-#include <DHT.h> // Requires installation of "DHT sensor library by Adafruit"
+#include <DHT.h>
 
 // PWM settings
 const int PWM_FREQ = 25000;    // 25 kHz frequency for computer fans
 const int PWM_RESOLUTION = 8;  // 8-bit resolution (0-255)
 
-// Pin definitions
+// Pin definitions 
 #define PWM_PIN 14 // Attached to the Fan's PWM terminal for speed control
 #define DHT22_PIN 13 // Attached to the DT22 Sensor's Data Pin
 #define ONBOARD_LED_PIN 2 // The onboard LED is tied to GPIO2
+#define TACH_PIN 27 //Unused
 
 #define LOOP_DELAY_MS 2000 // How long to wait between each polling loop
 #define LED_PERIOD_MS 50 // How long should the onboard LED remain on each polling loop
 
 // When the temperature is below this value
 // the fan will be turned off
-const float TEMP_LOW_THRESHOLD_CELSIUS = 35;
+const float TEMP_LOW_THRESHOLD_CELSIUS = 32;
 
 // Kick the fan to 100% over this threshold
-const float TEMP_HIGH_THRESHOLD_CELSIUS = 50;
+const float TEMP_HIGH_THRESHOLD_CELSIUS = 38;
 
 DHT dht22(DHT22_PIN, DHT22);
 
@@ -52,7 +53,7 @@ void loop() {
 
   float humi  = dht22.readHumidity();
   float tempC = dht22.readTemperature();
-  float tempF = dht22.readTemperature(true);
+  float tempF = tempC * 9.0 / 5.0 + 32.0;
 
   if (tempC <= TEMP_LOW_THRESHOLD_CELSIUS) {
     Serial.println("Turning off Fan");
