@@ -56,6 +56,15 @@ work in any number of situations
         <img src="./images/fan.jpg" width=50>
       </td>
     </tr>
+    <tr>
+      <td>12v Barrel Connector</td>
+      <td>
+        <a href="https://www.amazon.com/dp/B0D8BDX6Q5?th=1">Amazon</a>
+      </td>
+      <td>
+        <img src="./images/barrel_connector.png" width=50>
+      </td>
+    </tr>
   </tbody>
 </table>
 
