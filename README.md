@@ -131,6 +131,8 @@ flowchart TD
 
 [Step File](./Fan%20Controller%20-%20Mini%20Rack%20Mount.step)
 
+[onshape](https://cad.onshape.com/documents/b9def82ccf3bdff9cf5f2438/w/35c5b6c4bbd6ace056f11a3f/e/4fe5b528b247836f305f482f?renderMode=0&uiState=69868e02ddd392090bf928a6)
+
 ## Code
 See [RackFanWithTempSensorv1.ino](./RackFanWithTempSensorv1.ino)
 
