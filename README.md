@@ -9,6 +9,8 @@ that I will never remember, so I've captured my notes.
 While I'm focused on my Lab Rax build this setup should
 work in any number of situations
 
+![Final Product](./images/final_product.jpg)
+
 ## Components
 
 <table>
