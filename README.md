@@ -124,8 +124,12 @@ flowchart TD
     esp_gnd <--> buckOut-
 ```
 
-## Printed Case
-TBD
+## 3D Printed Custom Mount
+![Custom Mount](./images/case_mount_model.png)
+
+[STL File](./Fan%20Controller%20-%20Mini%20Rack%20Mount.stl)
+
+[Step File](./Fan%20Controller%20-%20Mini%20Rack%20Mount.step)
 
 ## Code
 See [RackFanWithTempSensorv1.ino](./RackFanWithTempSensorv1.ino)
